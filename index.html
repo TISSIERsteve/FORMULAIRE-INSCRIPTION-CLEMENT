@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script
+			src="https://kit.fontawesome.com/3568c21e55.js"
+			crossorigin="anonymous"
+		></script>
+		<link rel="stylesheet" href="style.css" />
+		<title>Formulaire d'inscription</title>
+	</head>
+	<body>
+		<div class="formulaire">
+			<form class="connexion" onsubmit="handleFormulaire()">
+				<div class="user">
+					<i class="fa-regular fa-user"></i>
+				</div>
+				<h1 class="titre_formulaire">Inscription</h1>
+				<div class="div_formulaire">
+					<input
+						id="mail"
+						class="form_input"
+						type="text"
+						placeholder="Adresse Mail"
+					/>
+
+					<label for="mail" class="form_label">Adresse Mail</label>
+				</div>
+				<span class="span1"></span>
+
+				<div id="messageMail">
+					<p id="letterMail" class="invalidMail">
+						Vous devez fournir une adresse Mail valide
+					</p>
+				</div>
+
+				<div class="div_formulaire mdp">
+					<input
+						id="psw"
+						class="form_input"
+						type="password"
+						placeholder="Mots de passe"
+						required
+					/>
+
+					<label for="psw" class="form_label">Mots de passe</label>
+					<i class="fa-solid fa-eye"></i>
+				</div>
+				<span class="span2"></span>
+
+				<div id="messagePsw">
+					<h3>Le mot de passe doît contenir les élèments suivants</h3>
+					<p id="letter" class="invalidPsw">Une lettre minuscule</p>
+					<p id="capital" class="invalidPsw">Une lettre majuscule</p>
+					<p id="number" class="invalidPsw">Un chiffre</p>
+					<p id="length" class="invalidPsw">8 caractères minimun</p>
+				</div>
+
+				<input type="submit" value="Connexion" class="form_button" />
+
+				<a href="./connexion.html">Déjà Client ? </a>
+			</form>
+		</div>
+
+		<script src="./script.js"></script>
+	</body>
+</html>
